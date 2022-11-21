@@ -25,12 +25,17 @@ body {
 .sidebar {
     background-image: url("images/pokemon.jpeg");
     background-position: center;
-    background-size: auto 100%;
     background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 500px;
     height: 100vh;
-    width: 100vh;
-    min-width: fit-content;
-    /* max-width: fit-content; */
+    min-width: 400px;
+    min-height: 100%;
+
+    position: relative;
+    /* top: 0;
+    left: 0; */
 }
 
 .logo-banner {
@@ -43,12 +48,13 @@ body {
 
 .logo-banner > h1 {
     color: #fff;
-    font: 3em "lemon-milk-reg", sans-serif;
+    font: 3rem "lemon-milk-reg", sans-serif;
+    padding-right: .25em;
 }
 
 .logo {
     height: 12vh;
-    padding: .5em;
+    padding: .5rem;
 }
 
 .photo-credits {
@@ -57,12 +63,14 @@ body {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.25);
     color: #fff;
-    font: .25em "lemon-milk-reg", sans-serif;
+    font: .7rem "lemon-milk-reg", sans-serif;
 }
 
 form {
     max-width: 100%;
     max-height: 100%;
+
+    /* background-image: url("images/Kanto_Route_1.webp"); */
 }
 
 h3 {

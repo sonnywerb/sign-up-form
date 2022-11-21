@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-banner">
+            <img class="logo" src="images/Poké_Ball_icon.png" alt="pokeball logo">
+            <h1>K A N T O</h1>
+        </div>
+        <div class="photo-credits">
+            Pokémon is owned by Gamefreak! & is published by Nintendo! All rights are reserved under fair use.
+        </div>
+    </div>
+
+    <form action="">
+        <section class="top">
+            <h3>
+                <p>
+                    Hello there! Welcome to the world of Pokémon!
+                    Your own Pokémon journey is about to unfold! 
+                    A world of dreams and adventures with Pokémon awaits!
+                </p>
+                <p>But first tell me a little about yourself.</p>
+            </h3>
+            <h3>You know you want to.</h3>
+        </section>
+
+        <section class="middle">
+            <fieldset>
+                <legend>Let's do this!</legend>
+                <ul>
+                    <li>
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </li>
+                    <li>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" required>
+                    </li>
+                    <li>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" required>
+                    </li>
+                    <li>
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </li>
+                    <li>
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="phone" id="phone" required>
+                    </li>
+                    <li>
+                        <label for="confirm-pw">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm-pw" id="confirm-pw" required>
+                    </li>
+                </ul>
+            </fieldset>
+        </section>
+
+        <section class="bottom">
+            <button type="submit">Create Account</button>
+            <div>Already have an account? Log in</div>
+        </section>
+    </form>
+</body>
+</html>

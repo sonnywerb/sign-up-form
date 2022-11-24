@@ -19,7 +19,7 @@
         </div>
     </div>
 
-    <form action="">
+    <form>
         <section class="top">
             <h3>
                 <p>
@@ -27,35 +27,35 @@
                     called Pokémon. Your own Pokémon journey is about to unfold!
                 </p>
             </h3>
-            <h3>A world of dreams and adventures with Pokémon awaits!</h3>
+            <h3><em>A world of dreams and adventures with Pokémon awaits!</em></h3>
         </section>
 
         <section class="middle">
             <fieldset>
-                <legend>But first tell me a little about yourself.</legend>
+                <legend><h3>But first tell me a little about yourself...</h3></legend>
                 <ul>
                     <li>
-                        <label for="first-name">FIRST NAME</label>
+                        <label for="first-name">FIRST NAME *</label>
                         <input type="text" id="first-name" name="first-name" required>
                     </li>
                     <li>
-                        <label for="email">EMAIL</label>
+                        <label for="email">EMAIL *</label>
                         <input type="email" name="email" id="email" required>
                     </li>
                     <li>
-                        <label for="password">PASSWORD</label>
+                        <label for="password">PASSWORD *</label>
                         <input type="password" name="password" id="password" required>
                     </li>
                     <li>
-                        <label for="last-name">LAST NAME</label>
+                        <label for="last-name">LAST NAME *</label>
                         <input type="text" id="last-name" name="last-name" required>
                     </li>
                     <li>
-                        <label for="phone">PHONE NUMBER</label>
+                        <label for="phone">PHONE *</label>
                         <input type="tel" name="phone" id="phone" required>
                     </li>
                     <li>
-                        <label for="confirm-pw">CONFIRM PASSWORD</label>
+                        <label for="confirm-pw">CONFIRM PASSWORD *</label>
                         <input type="password" name="confirm-pw" id="confirm-pw" required>
                     </li>
                 </ul>
@@ -64,7 +64,7 @@
 
         <section class="bottom">
             <button type="submit">Create Account</button>
-            <div>Already have an account? Log in</div>
+            <div>Already have an account? <span class="login">Log in</span></div>
         </section>
     </form>
 </body>

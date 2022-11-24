@@ -11,13 +11,6 @@
     font-style: normal;
 }
 
-/* @font-face {
-    font-family: "lemon-milk-med";
-    src: url("font/lemon_milk/LEMONMILK-Medium.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-} */
-
 @font-face {
     font-family: "lemon-milk-light";
     src: url("font/lemon_milk/LEMONMILK-Light.otf") format("opentype");

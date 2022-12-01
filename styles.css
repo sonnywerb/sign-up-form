@@ -133,18 +133,20 @@ label {
     color: #404044;
 }
 
+fieldset > ul:first-of-type {
+    margin-top: 1.2rem;
+}
+
 ul {
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
     list-style: none;
     width: 700px;
-
-    margin-top: 1rem;
 }
 
 li {
-    margin-bottom: 1rem;;
+    margin-bottom: 1rem;
 }
 
 input + span {

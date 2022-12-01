@@ -34,34 +34,31 @@
         <section class="middle">
             <fieldset>
                 <legend><h3>But first tell me a little about yourself...</h3></legend>
-                <p>
-                    Required fields are followed by
-                    <strong><span aria-label="required">*</span></strong>
-                </p>
                 <ul>
                     <li>
-                        <label for="first-name">FIRST NAME *</label>
+                        <label for="first-name">FIRST NAME</label>
                         <input type="text" id="first-name" name="first-name" required>
                     </li>
                     <li>
-                        <label for="email">EMAIL *</label>
+                        <label for="email">EMAIL</label>
                         <input type="email" name="email" id="email" required>
                     </li>
                     <li>
-                        <label for="password">PASSWORD *</label>
-                        <input type="password" name="password" id="password" required>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" required class="error">
                     </li>
                     <li>
-                        <label for="last-name">LAST NAME *</label>
+                        <label for="last-name">LAST NAME</label>
                         <input type="text" id="last-name" name="last-name" required>
                     </li>
                     <li>
-                        <label for="phone">PHONE *</label>
-                        <input type="tel" name="phone" id="phone" required>
+                        <label for="phone">PHONE</label>
+                        <input type="tel" name="phone" id="phone" required pattern="[0-9]{10}|[0-9]{3}[-. ][0-9]{3}[-. ][0-9]{4}[-. ]">
                     </li>
                     <li>
-                        <label for="confirm-pw">CONFIRM PASSWORD *</label>
-                        <input type="password" name="confirm-pw" id="confirm-pw" required>
+                        <label for="confirm-pw">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm-pw" id="confirm-pw" required class="error">
+                        <span></span>
                     </li>
                 </ul>
             </fieldset>

@@ -40,24 +40,31 @@
                         <input type="text" id="first-name" name="first-name" required>
                     </li>
                     <li>
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email" required>
-                    </li>
-                    <li>
-                        <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password" required class="error">
-                    </li>
-                    <li>
                         <label for="last-name">LAST NAME</label>
                         <input type="text" id="last-name" name="last-name" required>
                     </li>
+                    
+                </ul>
+                <ul>
+                    <li>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" required>
+                    </li>
+                    
+                    
                     <li>
                         <label for="phone">PHONE</label>
                         <input type="tel" name="phone" id="phone" required pattern="[0-9]{10}|[0-9]{3}[-. ][0-9]{3}[-. ][0-9]{4}[-. ]">
                     </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" required class="error" minlength="8">
+                    </li>
                     <li>
                         <label for="confirm-pw">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm-pw" id="confirm-pw" required class="error">
+                        <input type="password" name="confirm-pw" id="confirm-pw" required class="error" minlength="8">
                         <span></span>
                     </li>
                 </ul>

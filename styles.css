@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
 }
 
 @font-face {
@@ -72,7 +73,7 @@ textarea {
     padding: .5rem;
 }
 
-.photo-credits {
+.copyright-use {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -196,4 +197,28 @@ button[type="submit"]:disabled {
     font: 1rem "lemon-milk-reg", sans-serif;
     margin-bottom: 1rem;
     margin-left: 1.5rem;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    font: .8rem "lemon-milk-light", sans-serif;
+}
+
+.fa-github {
+    color: black;
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+  
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
 }

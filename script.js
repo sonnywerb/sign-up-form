@@ -4,7 +4,10 @@ const message = document.getElementById("password-error");
 const submit = document.querySelector("button[type=\"submit\"]");
 
 let check = function() {
-    if (password.value === confirmPw.value) {
+    if (password.length !== 0 &&
+         confirmPw.value.length !== 0 &&
+         password.value === confirmPw.value) {
+
         message.textContent = "";
         password.classList.remove("error");
         confirmPw.classList.remove("error");

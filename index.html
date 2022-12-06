@@ -39,34 +39,34 @@
                 <ul>
                     <li>
                         <label for="first-name">FIRST NAME</label>
-                        <input type="text" id="first-name" name="first-name" required>
+                        <input type="text" id="first-name" name="first-name" onkeyup="validate(); enableSubmit();" required>
                     </li>
                     <li>
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" id="last-name" name="last-name" required>
+                        <input type="text" id="last-name" name="last-name" onkeyup="validate(); enableSubmit();" required>
                     </li>
                     
                 </ul>
                 <ul>
                     <li>
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email" required>
+                        <input type="email" name="email" id="email" onkeyup="validate(); enableSubmit();" required>
                     </li>
                     
                     
                     <li>
                         <label for="phone">PHONE</label>
-                        <input type="tel" name="phone" id="phone" required pattern="[0-9]{10}|[0-9]{3}[-. ][0-9]{3}[-. ][0-9]{4}[-. ]">
+                        <input type="tel" name="phone" id="phone" onkeyup="validate(); enableSubmit();" required pattern="[0-9]{10}|[0-9]{3}[-. ][0-9]{3}[-. ][0-9]{4}[-. ]">
                     </li>
                 </ul>
                 <ul>
                     <li>
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password" required onkeyup="check();">
+                        <input type="password" name="password" id="password" required onkeyup="checkPassword(); enableSubmit();">
                     </li>
                     <li>
                         <label for="confirm-pw">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm-pw" id="confirm-pw" required onkeyup="check();">
+                        <input type="password" name="confirm-pw" id="confirm-pw" required onkeyup="checkPassword(); enableSubmit();">
                         <span id="password-error"></span>
                     </li>
                 </ul>

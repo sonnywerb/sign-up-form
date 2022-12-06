@@ -149,21 +149,6 @@ li {
     margin-bottom: 1rem;
 }
 
-input + span {
-    position: relative;
-}
-
-input.error:invalid {
-    border: 1.5px solid #dd4c4e;
-}
-
-input.error:invalid + span::after {
-    display: block;
-    font-size: .7rem;
-    color: #dd4c4e;
-    content: "* Passwords do not match";
-}
-
 input {
     padding: .3rem;
     width: 250px;
@@ -175,6 +160,17 @@ input {
     font-size: .75rem;
 }
 
+input.error {
+    border: 1.5px solid #dd4c4e;
+}
+
+input.error + span::after {
+    display: block;
+    font-size: .7rem;
+    color: #dd4c4e;
+    content: "* Passwords do not match";
+}
+
 button[type="submit"] {
     width: 180px;
     height: 45px;
@@ -183,9 +179,13 @@ button[type="submit"] {
     margin-bottom: 1.5rem;
 
     color: white;
-    background-color: #df1818df;
+    background-color: #df1818;
     border: none;
     border-radius: 5px;
+}
+
+button[type="submit"]:disabled {
+    background-color: #d37373;
 }
 
 .login {

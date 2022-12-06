@@ -7,6 +7,7 @@
     <title>Sign Up</title>
     <link rel="stylesheet" href="styles.css" defer>
     <link href="favicon.ico?" rel="icon" type="image/x-icon" />
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="sidebar">
@@ -60,19 +61,19 @@
                 <ul>
                     <li>
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password" required class="error" minlength="8">
+                        <input type="password" name="password" id="password" required onkeyup="check();">
                     </li>
                     <li>
                         <label for="confirm-pw">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm-pw" id="confirm-pw" required class="error" minlength="8">
-                        <span></span>
+                        <input type="password" name="confirm-pw" id="confirm-pw" required onkeyup="check();">
+                        <span id="password-error"></span>
                     </li>
                 </ul>
             </fieldset>
         </section>
 
         <section class="bottom">
-            <button type="submit">Create Account</button>
+            <button type="submit" id="submit" disabled="true">Create Account</button>
             <div>Already have an account? <span class="login">Log in</span></div>
         </section>
 
